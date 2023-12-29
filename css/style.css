@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+:root{
+    --back: #111315;
+    --main: #1b1d1f;
+    --secondary-text: #6f757c;
+    --primary-text: #fef7ee;
+    --popular: #f6c768;
+    --sold-out: #ed735d;
+    --price: #bee3cc;
+    --font: 'DM Sans', sans-serif;
+    --size-heading: 3.2rem;
+    --size-label: 1.4rem;
+    --size-small: 1rem;
+    --size-price: 1.2;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--back);
+}
+/*--------------------------*/
+.page-header{
+    background-image: url(../img/bg-cafe.jpg);
+    height: 26rem;
+    background-size: 120rem;
+}
+.page-footer{
+    background-color: var(--back);
+    height: 100rem;
+}
+.main{
+    height: fit-content;
+    width: auto;
+    background-color: var(--main);
+    position: absolute;
+    inset: 18rem 5rem 10rem 5rem;
+    border-radius: 2rem;
+}
+.main-header{
+    font-family: var(--font);
+    color: var(--primary-text);
+    font-size: var(--size-heading);
+    text-align: center;
+    height:23.7rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro{
+    font-size: var(--size-label);
+    text-align: center;
+    color: var(--secondary-text);
+    max-width: 50rem;
+    align-self: center;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons input{
+    background-color: var(--secondary-text);
+    border: var(--secondary-text) solid 0.1rem;
+    border-radius: 0.5rem;
+    font-family: var(--font);
+    color: var(--primary-text);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.coffes{
+    margin: 2rem 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.coffee-example{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
+.item{
+    text-decoration: none;
+    font-family: var(--font);
+    color: var(--primary-text);
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.coffee-price{
+    font-size: var(--size-price);
+    background-color: var(--price);
+    margin: 1rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.8rem;
+    color: var(--main);
+}
+.coffee-name{
+    padding: 1rem;
+    font-size: 2rem;
+}
+.coffee-votes{
+    color: var(--secondary-text);
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.votes{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.container{
+    background-color: var(--back);
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+*::-webkit-scrollbar:vertical {
+    width:1rem;
+    background-color: var(--back);
+}
+*::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+*::-webkit-scrollbar:horizontal {
+    height: 1rem;
+    background-color: var(--main);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(151, 91, 64);
+    border-radius: 2rem;
+    border: 0.2rem solid #1760a800;
+}
+*::-webkit-scrollbar-track {
+    border-radius: 1rem;
+}
