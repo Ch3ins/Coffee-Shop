@@ -84,7 +84,7 @@ body{
 .coffes{
     display: grid;
     gap: 3rem;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
 }
 .coffee-example{
     width: 30rem;
@@ -157,14 +157,13 @@ body{
 *::-webkit-scrollbar-track {
     border-radius: 1rem;
 }
-
-@media screen and (max-width:720px) {
-    .coffes {
-        grid-template-columns: auto;
-    }
-}
-@media screen and (max-width:1078px) {
+@media screen and (min-width:740px) {
     .coffes {
         grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width:1080px) {
+    .coffes {
+        grid-template-columns: auto auto auto;
     }
 }
