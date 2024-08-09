@@ -76,11 +76,15 @@ body{
     padding: 1rem;
     margin: 0.5rem;
 }
-.coffes{
-    margin: 2rem 8rem;
+.list{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+.coffes{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: auto auto auto;
 }
 .coffee-example{
     width: 30rem;
@@ -90,6 +94,7 @@ body{
 .item{
     text-decoration: none;
     font-family: var(--font);
+    width: fit-content;
     color: var(--primary-text);
 }
 .description{
@@ -151,4 +156,15 @@ body{
 }
 *::-webkit-scrollbar-track {
     border-radius: 1rem;
+}
+
+@media screen and (max-width:720px) {
+    .coffes {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width:1078px) {
+    .coffes {
+        grid-template-columns: auto auto;
+    }
 }
